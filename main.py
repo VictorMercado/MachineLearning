@@ -5,16 +5,6 @@ from tensorflow import keras
 from sklearn.model_selection import train_test_split
 
 def generate_random_array(size=100, seed=None):
-    """
-    Generate an array with random numbers.
-
-    Parameters:
-    - size (int): The size of the array (default is 100).
-    - seed (int or None): Optional seed for random number generation.
-
-    Returns:
-    - numpy.ndarray: Array containing random numbers.
-    """
     if seed is not None:
         np.random.seed(seed)
     random_array = np.random.uniform(-100, 100, size)
