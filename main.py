@@ -41,13 +41,11 @@ print(x_test.shape)
 y_train = target_function(x_train)
 y_test = target_function(x_test)
 
-# Split data into training and test sets
-# x_train, x_test, y_train, y_test = train_test_split(x_train, y_train, test_size=0.6, random_state=42)
 # Define model architectures
 architectures = [
-    [50],               # Model 1: One hidden layer with 50 neurons
-    [30, 20],           # Model 2: Two hidden layers with 30 and 20 neurons
-    [20, 20, 20]        # Model 3: Three hidden layers with 20 neurons each
+    [50],               # Model 1 One hidden layer with 50 neurons
+    [30, 20],           # Model 2 Two hidden layers with 30 and 20 neurons
+    [20, 20, 20]        # Model 3 Three hidden layers with 20 neurons each
 ]
 
 # Train and evaluate each model
